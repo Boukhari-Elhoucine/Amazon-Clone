@@ -1,0 +1,24 @@
+.home {
+  margin: 0 auto;
+}
+.home__image {
+  display: block;
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+  margin-bottom: -150px;
+}
+.products--grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home__row {
+  display: flex;
+  z-index: 1;
+}
+@media (max-width: 900px) {
+  .home__row {
+    flex-direction: column;
+    margin: 0 20px 0 10px;
+  }
+}
